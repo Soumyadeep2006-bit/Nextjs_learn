@@ -18,6 +18,8 @@ export async function POST(request: Request) {
             return Response.json({
                 success: false,
                 message: "Username is already taken"
+
+                
             }, {status: 400})
         }
 
