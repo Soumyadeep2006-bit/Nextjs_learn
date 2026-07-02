@@ -28,6 +28,7 @@ export async function POST(request: Request) {
         const verificationCode = Math.floor(10000 + Math.random() * 90000).toString()
 
         if(existingUserByEmail) {
+            console.log("Existing user:", existingUserByEmail);
             if(existingUserByEmail.isVerified) {
                 return Response.json(
                     {

@@ -2,7 +2,7 @@
 
 function page() {
   return (
-    <div>
+    <div className="bg-orange-600">
       Sign In Page
     </div>
   )
